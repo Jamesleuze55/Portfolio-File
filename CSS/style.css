@@ -1,0 +1,260 @@
+/*
+Colors Used
+Background color (White): #ffffff;
+Primary Color: #b0b0b0
+Secondary Color (Gray77): #e1e0e0
+Text Color (black): 111
+Font:Poppins
+*/
+
+:root {
+  --main-color: #111;
+  --bg-color: #fff;
+  --primary-color: #227BC8;
+  --hoover-color: #f40004;
+  --project-list: #b0b0b0;
+  --chicago-o: #fff;
+  --chicago-50: #fff;
+  --chicago-100: #000;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight:  400;
+  font-size:  18px;
+  line-height: 1.6;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header__title {
+  /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally*/
+  margin: 0 auto;
+}
+
+/*header*/
+
+header {
+  background-color: var(--bg-color);
+}
+
+img.page-header__item {
+  padding: 10px;
+  width: 100%;
+}
+
+header.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+  position: static;
+  /*This padding and the margin below is how I was able to move nav bar to the right*/
+  margin-right: 10px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  display: inline-flex;
+}
+
+/*Navigation List*/
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list__item {
+  display: inline;
+  margin-left: 100px;
+  padding-top: 15px;
+}
+
+.navigation-list__item:hover {
+  text-decoration: underline;
+  color: var(--hoover-color)
+}
+
+ .profile__portrait {
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--primary-color);
+  position: relative;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: var(--hoover-color);
+}
+
+a:active {
+  color: var(--main-color);
+}
+
+input texturearea, select, button {
+  font-family: system-ui;
+}
+
+.button, button{
+  display: inline-block;
+  border: none;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba (0, 0,0, 0.3);
+  transition: 0.2s opcaity;
+}
+
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer img {
+  width: 50px;
+}
+
+.work {
+  max-width: 100%;
+  margin: 100px auto;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.project-list__item {
+  display: inline-block;
+  background-color: var(--project-list);
+  padding: 10px;
+  width: auto;
+}
+
+.project-list__item--button {
+  text-align: center;
+  position: relative;
+
+}
+
+.project-list__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+p{
+  display: block;
+}
+
+@media all and (max-width: 500px){
+  .project-list {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .project-list__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.cv {
+  text-align: center;
+}
+
+.chicago {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes color-change {
+  50% {
+    fill: var(--chicago-50);
+  }
+  100% {
+    fill: var(--chicago-100);
+  }
+}
+
+.st18 {
+  animation: 5s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0 25px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+path.st3 {
+  animation: 30s cloud-change infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+path.st3 {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
