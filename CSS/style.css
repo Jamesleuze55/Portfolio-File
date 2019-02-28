@@ -8,14 +8,14 @@ Font:Poppins
 */
 
 :root {
-  --main-color: #111;
-  --bg-color: #fff;
-  --primary-color: #227BC8;
-  --hoover-color: #f40004;
-  --project-list: #b0b0b0;
-  --chicago-o: #fff;
-  --chicago-50: #fff;
-  --chicago-100: #000;
+--main-color: #111;
+--bg-color: #fff;
+--primary-color: #227BC8;
+--hoover-color: #f40004;
+--project-list: #b0b0b0;
+--chicago-o: #fff;
+--chicago-50: #fff;
+--chicago-100: #000;
 }
 
 * {

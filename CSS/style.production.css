@@ -203,8 +203,7 @@ button:focus {
 footer {
   clear: both;
   text-align: center;
-  margin-top: 100px;
-}
+  }
 
 footer img {
   width: 50px;
