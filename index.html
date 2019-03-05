@@ -1,47 +1,61 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Jim Leuze's Web Page</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Jim Leuze's Web Page</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-  <body>
-    <!--head -->
-    <header class="page-header">
-      <!-- Add Your logo image here-->
-      <img class="page-header__item" src="img/logo.png" alt="logo" >
-      <!--blue and red </> with Jim Leuze to the right and Web Developer underneath my name-->
-      <nav class="main-navigation page-header__item">
-        <div class="container red topBotomBordersOut">
+<body>
+  <!--head -->
+  <header class="page-header">
+    <!-- Add Your logo image here-->
+    <img class="page-header__item" src="img/logo.png" alt="logo" >
+    <!--blue and red </> with Jim Leuze to the right and Web Developer underneath my name-->
+    <nav class="main-navigation page-header__item">
+      <!--   <div class="container red topBotomBordersOut">
           <a href="index.html" class="navigation-list__item">Home</a>
           <a href="about.html" class="navigation-list__item">About</a>
           <a href="work.html" class="navigation-list__item">Work</a>
           <a href="contact.html" class="navigation-list__item">Contact</a>
-        </div>
-    </nav>
-  </header>
+        </div> -->
+      <ul role="menubar" class="navigation-list" >
+        <li>
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li>
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li>
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li>
+        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  <div class="profile">
-    <!--Add your portrait image here adjust syntax-->
-    <img class="profile__portrait" src="img/profilepic.jpg" alt="A photograph of me">
-    <h1>Hello World</h1>
-    <p>My name Jim Leuze.  I am a <span>web</span> developer from the United States.</p>
-    <a href="https://github.com/Jamesleuze55" class="button">Show me some code</a>
-    <a class="button" href="mailto:jamesleuze55@gmail.com">Contact Me</a>
-  </div>
+<div class="profile">
+  <!--Add your portrait image here adjust syntax-->
+  <img class="profile__portrait" src="img/profilepic.jpg" alt="A photograph of me">
+  <h1>Hello World</h1>
+  <p>My name Jim Leuze.  I am a <span>web</span> developer from the United States.</p>
+  <a href="https://github.com/Jamesleuze55" class="button">Show me some code</a>
+  <a class="button" href="mailto:jamesleuze55@gmail.com">Contact Me</a>
+</div>
 
-  <footer>
-    <p>Find me on</p>
-    <img src="img/github.svg" alt="Github">
-    <img src="img/twitter.svg" alt="Twitter">
-    <img src="img/linkedin.svg" alt="LinkedIn">
-  </footer>
-  <script src="JS/tota11y-0.1.6/build/tota11y.min.js"></script>
-  </body>
-  </html>
+<footer>
+  <p>Find me on</p>
+  <img src="img/github.svg" alt="Github">
+  <img src="img/twitter.svg" alt="Twitter">
+  <img src="img/linkedin.svg" alt="LinkedIn">
+</footer>
+<script src="JS/tota11y-0.1.6/build/tota11y.min.js"></script>
+</body>
+</html>
