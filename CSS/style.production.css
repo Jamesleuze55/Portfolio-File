@@ -148,7 +148,6 @@ a:hover {
 
 a:focus {
   text-decoration: none;
-  color: #f40004;
 }
 
 a:active {
@@ -350,4 +349,15 @@ path.st3 {
 path.st3 {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*Contact Pacge */
+.contact_info {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.email {
+  padding-top: 50px;
+  text-align: center;
 }
